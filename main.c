@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(){
-  int a = 10;
+int main(void){
+  /* int a = 10;
   printf("Hello\n");
   
   printf("%d\n", 10);
@@ -23,6 +23,15 @@ int main(){
   printf("Enter your age and height: ");
 
   scanf("%d %f", &age, &height);
-  printf("You are %d years old and %.2f meters tall.\n", age, height);
+  printf("You are %d years old and %.2f meters tall.\n", age, height); */
+    int year, result;
+
+    printf ( " Enter the year : " );
+    scanf ( "%d" , &year);
+    
+    result = ( (year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+    printf ( "result=%d \n" , result);
+    
+
   return 0;
 }
