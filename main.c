@@ -23,14 +23,26 @@ int main(void){
   printf("Enter your age and height: ");
 
   scanf("%d %f", &age, &height);
-  printf("You are %d years old and %.2f meters tall.\n", age, height); */
+  printf("You are %d years old and %.2f meters tall.\n", age, height); 
     int year, result;
 
     printf ( " Enter the year : " );
     scanf ( "%d" , &year);
     
     result = ( (year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
-    printf ( "result=%d \n" , result);
+    printf ( "result=%d \n" , result);*/
+
+    int number;
+    printf("Enter an integer :");
+    scanf("%d", &number);
+
+    if (number<0)
+    {
+      number = -number;
+    }
+
+    printf("The absolute value is %d.", number);
+    
     
 
   return 0;
