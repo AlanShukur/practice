@@ -41,7 +41,7 @@ int main(void){
       number = -number;
     }
 
-    printf("The absolute value is %d.", number);*/
+    printf("The absolute value is %d.", number);
     
     int score;
 
@@ -63,8 +63,35 @@ int main(void){
       } else
       {
         printf("passed: Grade F\n");
+      }*/
+
+    char op;
+    int x, y, result;
+
+    printf("Enter a formula (e.g 2 + 5) >>");
+    scanf("%d %c %d", &x, &op, &y);
+
+    if (op == '+')
+      {
+        result = x + y;
+      } else if (op == '-')
+      {
+        result = x - y;
+      } else if (op == '*')
+      {
+        result = x * y;
+      } else if (op == '/')
+      {
+        result = x / y;
+      } else if (op == '%')
+      {
+        result = x % y;
+      } else
+      {
+        printf("unsupported operator.");
       }
-    
+
+      printf("%d %c %d = %d \n", x, op, y, result);
 
   return 0;
 }
