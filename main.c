@@ -30,7 +30,7 @@ int main(void){
     scanf ( "%d" , &year);
     
     result = ( (year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
-    printf ( "result=%d \n" , result);*/
+    printf ( "result=%d \n" , result);
 
     int number;
     printf("Enter an integer :");
@@ -41,8 +41,29 @@ int main(void){
       number = -number;
     }
 
-    printf("The absolute value is %d.", number);
+    printf("The absolute value is %d.", number);*/
     
+    int score;
+
+    printf("Enter your grades : ");
+    scanf("%d", &score);
+
+    if (score>=90)
+      {
+        printf("passed: Grade A\n");
+      }else if (score>=80)
+      {
+        printf("passed: Grade B\n");
+      }else if (score >= 70)
+      {
+        printf("passed: Grade C\n");
+      } else if (score >= 60)
+      {
+        printf("passed: Grade D\n");
+      } else
+      {
+        printf("passed: Grade F\n");
+      }
     
 
   return 0;
